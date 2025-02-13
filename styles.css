@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #004466;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(120deg, #003366, #006699);
+    color: white;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px auto;
+}
+
+canvas {
+    width: 80%;
+    margin: auto;
+    background: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #f9a825;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d18b00;
+}

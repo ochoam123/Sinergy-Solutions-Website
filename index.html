@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinergy Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img src="logo.png" alt="Sinergy Solutions Logo">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#architecture">Architecture Tool</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Sinergy Solutions</h1>
+        <p>AI-Powered IT Solutions for Scalable Digital Transformation</p>
+        <a href="#architecture" class="cta">Try Our Architecture Tool</a>
+    </header>
+
+    <!-- Architecture Generator Section -->
+    <section id="architecture" class="architecture">
+        <h2>Generate Your IT Architecture</h2>
+        <p>Adjust the settings below to generate a recommended IT architecture.</p>
+
+        <div class="slider">
+            <label>Number of Customizations:</label>
+            <input type="range" min="1" max="10" id="customizations">
+            <span id="customValue">5</span>
+        </div>
+
+        <div class="slider">
+            <label>Number of Integrations:</label>
+            <input type="range" min="1" max="10" id="integrations">
+            <span id="integrationValue">5</span>
+        </div>
+
+        <!-- Architecture Diagram -->
+        <canvas id="architectureCanvas"></canvas>
+
+        <!-- Export to PDF -->
+        <button onclick="exportToPDF()">Download Report</button>
+    </section>
+
+    <!-- Authentication Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button onclick="sendOTP()">Send OTP</button>
+        <input type="text" id="otp" placeholder="Enter OTP">
+        <button onclick="verifyOTP()">Verify</button>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</body>
+</html>
