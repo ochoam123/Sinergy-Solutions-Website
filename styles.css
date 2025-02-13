@@ -6,12 +6,30 @@ body {
     color: #333;
 }
 
+.logo {
+    height: 60px; /* Adjust logo size */
+    width: auto;
+    margin-right: 15px;
+}
+
 .navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
     background-color: #004466;
     color: white;
+}
+
+.navbar img {
+    max-height: 60px; /* Ensure the logo doesn't stretch */
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 40px; /* Smaller logo on mobile */
+    }
 }
 
 .hero {
